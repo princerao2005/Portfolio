@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      background: white;
+      max-width: 600px;
+      padding: 20px 30px;
+      gap:20px;
+      border-radius: 10px;
+      margin:10px;
+     
+      
+      
+    }
+
+    .profile-section img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      flex-shrink:0;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    
+
+    .profile-info p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+
+    }
+
+    .buttons button {
+      background-color: #0066ff;
+      color:white;
+      border: 5px;
+      padding: 8px 16px;
+      margin: 10px;
+      width: 100%;
+      border-radius: 5px;
+      
+    }
+
+    .buttons button:hover {
+      background-color: #0047b3;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .buttons button {
+        margin: 5px;
+        
+      }
+      .buttons{
+        flex-direction: column;
+        align-items: center;
+       
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    
+    <div class="profile-section">
+
+        <img src= "https://media.istockphoto.com/id/1351445530/photo/african-student-sitting-in-classroom.jpg?s=612x612&w=0&k=20&c=1ICaZ03iFLzDmxfBkfDkmBGSgj1SDEpsM3eSDgB1KBk=">
+      
+      <div class="profile-name"><b>Prince Yadav</b></div>
+    </div>
+
+   
+    <div class="profile-info">
+      <p>Web Designer & JavaScript Enthusiast.<br>
+         Loves clean, creative layouts and good coffee!</p>
+      <div class="buttons">
+        <button>Contact</button>
+        <a href="./index.html" alt="Portfolio"><button>Portfolio</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
